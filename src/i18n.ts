@@ -11,13 +11,13 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         title: 'Multi-language app',
-        hi: 'Hello world'
+        hi: 'Hello'
       },
     },
     es: {
       translation: {
         title: 'Aplicación en varios idiomas',
-        hi: 'Hola mundo'
+        hi: 'Hola'
       },
     },
   },

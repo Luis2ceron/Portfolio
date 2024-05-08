@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className='flex flex-row items-center justify-between p-4 bg-gray-800'>
+    <header className='flex flex-row items-center justify-between p-4 bg-app-white'>
       <p>{t('title')}</p>
 
       <select
