@@ -4,6 +4,7 @@ import '../../i18n.ts';
 import './assets/styles/index.css';
 import App from '../App.tsx';
 import { useTranslation } from 'react-i18next';
+import React from 'react'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
