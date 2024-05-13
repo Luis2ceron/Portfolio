@@ -1,10 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// main.jsx
+import { createRoot } from 'react-dom';
+import App from './data/App';
+import './i18n'; // Importa la configuración de i18n
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
