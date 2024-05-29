@@ -10,7 +10,7 @@ const HomePage = () => {
     
     <div className="container mx-auto px-4 py-8" style={{background: '#1f1f1f'}} >
       {/*Aqui empieza la pagina principal*/}
-      <p className="text-xl text-justify flex justify-center align-middle mb-4  font-bold text-white">Luis Alejandro Ceron Muñoz</p>
+      <p className="text-4xl text-justify flex justify-center align-middle mb-4  font-bold text-white">Luis Alejandro Ceron Muñoz</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
      
@@ -22,7 +22,7 @@ const HomePage = () => {
           <p className="text-xl text-justify flex justify-center align-middle mb-4 text-white">Soy un estudiante de quinto semestre de Ingeniería de Software con la capacidad de adaptarme fácilmente a flujos de trabajo exigentes y adquirir nuevos conocimientos sin afectar los resultados. Me enfoco en brindar soluciones sencillas pero escalables a los retos que se presenten en cualquier etapa del desarrollo de software.
 Mi experiencia incluye trabajar como programador y tester en proyectos independientes, especialmente en el desarrollo y pruebas de videojuegos y simuladores. He participado en varios concursos amateur de creación de videojuegos (game jams) obteniendo resultados destacados.</p>
           <p className="text-xl mb-4 text-white"> Fuera del entorno del desarrollo de software, disfruto de todo el proceso relacionado con los videojuegos, Desde aprender sobre la historia de éstos en su desarrollo y temática hasta buscar formas de recrearlos total o parcialmente. Considero a su vez que esta pasión por aprender acerca de lo que disfruto está presente también en otros temas como la música y habilidades manuales Como reparar cosas y la carpintería</p>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center">
           
           </div>
         </div>
