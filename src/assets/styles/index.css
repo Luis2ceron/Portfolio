@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Simulador{
-    background-image: url(../icons/Simuldor.jpeg);
+    background-image: url(../icons/Simulador.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -14,11 +14,12 @@
     background-position: center;
 }
 
-.Videojuego{
-    background-image: url(../icons/Videojuego.mp4);
+.Videojuego {
+    background: url(../icons/Videojuego.mp4);
     background-size: cover;
     background-position: center;
-}
+  }
+  
 
 .project2{
     background-image: url(../icons/Project2.jpeg);
