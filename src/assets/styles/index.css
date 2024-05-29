@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .Simulador{
-    background-image: url(../Simuldor.jpeg);
+    background-image: url(Simuldor.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .Ecommerce{
-    background-image: url(../Ecommerce.jpg);
+    background-image: url(Ecommerce.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Videojuego{
-    background-image: url(../Videojuego.mp4);
+    background-image: url(Videojuego.mp4);
     background-size: cover;
     background-position: center;
 }
