@@ -15,7 +15,7 @@
 }
 
 .Videojuego {
-    background: url(../icons/Videojuego.mp4);
+    background-image: url(../icons/Videojuego.jpg);
     background-size: cover;
     background-position: center;
   }
