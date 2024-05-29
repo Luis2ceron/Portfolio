@@ -10,7 +10,7 @@ const HomePage = () => {
     
     <div className="container mx-auto px-4 py-8" style={{background: '#1f1f1f'}} >
       {/*Aqui empieza la pagina principal*/}
-      <p className="text-xl font-bold text-white">Luis Alejandro Ceron Muñoz</p>
+      <p className="text-xl text-justify flex justify-center align-middle mb-4  font-bold text-white">Luis Alejandro Ceron Muñoz</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
       <section className="text-center">
