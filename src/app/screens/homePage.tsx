@@ -13,17 +13,7 @@ const HomePage = () => {
       <p className="text-xl text-justify flex justify-center align-middle mb-4  font-bold text-white">Luis Alejandro Ceron Muñoz</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
-      <section className="text-center">
-        <h2 className="text-xl font-bold align-middle mb-4 text-white">Contacto</h2>
-        {/*Aqui agregas la pendejada de los iconos */}
-        <p>
-        <a href="mailto:luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">email</a>
-          <a href="https://www.linkedin.com/in/luis-cerón-694626272" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">LinkedIn</a>
-          <a href="https://wa.me/qr/P72NSGVSR6TWL1" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">WhatsApp</a>
-          <a href="https://github.com/Luis2ceron" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitHub</a>
-          <a href="https://gitlab.com/luiscerontrabajos" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitLab</a>
-        </p>
-      </section>
+     
       {/*Aqui empieza el About me*/}
       <section id="sobre-mi" className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -154,6 +144,17 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
         </div>
       </div>
     </section>
+    <section className="text-center">
+        <h2 className="text-xl font-bold align-middle mb-4 text-white">Contacto</h2>
+        {/*Aqui agregas la pendejada de los iconos */}
+        <p>
+        <a href="mailto:luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">email</a>
+          <a href="https://www.linkedin.com/in/luis-cerón-694626272" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">LinkedIn</a>
+          <a href="https://wa.me/qr/P72NSGVSR6TWL1"  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">WhatsApp</a>
+          <a href="https://github.com/Luis2ceron"  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitHub</a>
+          <a href="https://gitlab.com/luiscerontrabajos"  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitLab</a>
+        </p>
+      </section>
     </section>
     </div>
   );
