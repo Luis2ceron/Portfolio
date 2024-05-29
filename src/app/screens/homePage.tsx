@@ -1,31 +1,37 @@
+import { useTranslation } from 'react-i18next';
+import { t } from "i18next";
 import React from 'react';
-import { useTranslation, t } from 'react-i18next'; 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+
+
 const HomePage = () => {
-  const { i18n } = useTranslation(); 
+  const { i18n, t } = useTranslation();
 
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
   };
-
   return (
-    <div className="container mx-auto px-4 py-8" style={{ background: '#1f1f1f' }}>
+    
+    <div className="container mx-auto px-4 py-8" style={{background: '#1f1f1f'}} >
+      {/*Aqui empieza la pagina principal*/}
       <h1 className="text-3xl font-bold text-center mb-4 text-white">{t('welcomePort')}</h1>
-      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white">Estudiante de Ing.Software</p>
-      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white">Indie GameDev</p>
+      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
+      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
       <section className="text-center">
         <h2 className="text-xl font-bold align-middle mb-4 text-white">{t('contactMe')}:</h2>
+        {/*Aqui agregas la pendejada de los iconos */}
         <p>
-          <a href="mailto:luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">{t('email')}</a>
+        <a href="mailto:luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">{t('email')}</a>
           <a href="https://www.linkedin.com/in/luis-cerón-694626272" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">LinkedIn</a>
           <a href="https://wa.me/qr/P72NSGVSR6TWL1" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">WhatsApp</a>
           <a href="https://github.com/Luis2ceron" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitHub</a>
           <a href="https://gitlab.com/luiscerontrabajos" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitLab</a>
         </p>
       </section>
+      {/*Aqui empieza el About me*/}
       <section id="sobre-mi" className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center md:text-left">
@@ -34,14 +40,7 @@ const HomePage = () => {
 Mi experiencia incluye trabajar como programador y tester en proyectos independientes, especialmente en el desarrollo y pruebas de videojuegos y simuladores. He participado en varios concursos amateur de creación de videojuegos (game jams) obteniendo resultados destacados.</p>
           <p className="text-xl mb-4 text-white"> Fuera del entorno del desarrollo de software, disfruto de todo el proceso relacionado con los videojuegos, Desde aprender sobre la historia de éstos en su desarrollo y temática hasta buscar formas de recrearlos total o parcialmente. Considero a su vez que esta pasión por aprender acerca de lo que disfruto está presente también en otros temas como la música y habilidades manuales Como reparar cosas y la carpintería</p>
           <div className="flex justify-center md:justify-start">
-          <a
-            href="https://drive.google.com/file/d/1QETDDSSWN7oV_E9hq-_aInkwJCBVH4C8/view?usp=sharing"
-            className="text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-            style={{ background: '#1f1f1f' }}
-            target="_blank" 
-          >
-            {t('downCV')}
-          </a>
+          
           </div>
         </div>
         <div className="flex flex-col items-center">
@@ -55,13 +54,14 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
           </div>
         </div>
       </div>
-      </section>
-      <section id="portafolio" className="container mx-auto px-4 py-8 text-white">
-        {/* Contenido del portafolio... */}
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex flex-col items-center">
-            <Carousel className="carousel items-center mx-auto max-w-md">
-               <div style={{
+    </section>
+    {/*Aqui empieza el portafolio*/}
+    <section id="portafolio" className="container mx-auto px-4 py-8 text-white">
+      <h2 className="flex flex-col items-center text-3xl font-bold mb-8">{t('portfolio')}</h2>
+      <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center">
+          <Carousel className="carousel items-center mx-auto max-w-md">
+            <div style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -104,7 +104,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               flexDirection: 'column',
               alignItems: 'center',
             }}>
-              <img
+               <img
                 width={350}
                 height={250}
                 src="Ecommerce.jpg"
@@ -117,12 +117,16 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               {t('seeMore')}
               </a>
             </div>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}>
             </div>
-            </Carousel>
-          </div>
+          </Carousel>
         </div>
-      </section>
-      
+      </div>
+      {/*Aqui empieza lo de habilidades aqui tambien le agregas tus iconos de mrd */}
       <section className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-2 gap-4">
         <div className="border rounded-lg px-4 py-4">
@@ -164,9 +168,10 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
         </div>
       </div>
     </section>
-      </section>
+    </section>
     </div>
   );
 };
 
-export default HomePage;
+export default HomePage; 
+
