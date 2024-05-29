@@ -10,6 +10,7 @@ const HomePage = () => {
     
     <div className="container mx-auto px-4 py-8" style={{background: '#1f1f1f'}} >
       {/*Aqui empieza la pagina principal*/}
+      <p className="text-xl font-bold text-white">Luis Alejandro Ceron Muñoz</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
       <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
       <section className="text-center">
@@ -39,8 +40,6 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
           {/*Esta imagen y el de div con los p los puedes borrar si quieres*/}
           
           <div className="flex flex-col items-center">
-            <p className="text-xl font-bold text-white">Luis Alejandro Ceron Muñoz</p>
-            <p className="text-base text-white">Estudiante de Ingeniería de Software</p>
           </div>
         </div>
       </div>
@@ -60,8 +59,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="rounded-lg shadow-md mb-4"
-                src="Videojuego.mp4"
+                className="Videojuego.mp4 rounded-lg shadow-md mb-4"
               />
               {/*Aqui en los h3 está los nombres de los proyectos, su descripcion y en el href el link para que te redireccione al directorio*/}
 
@@ -78,8 +76,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="rounded-lg shadow-md mb-4"
-                src="Simulador.jpeg"
+                className="Simulador.jpeg rounded-lg shadow-md mb-4"
               />
               <h3 className="text-xl font-bold mb-2">Simulador</h3>
               <p className="text-gray-600 mb-4">
@@ -96,7 +93,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
                <img
                 width={350}
                 height={250}
-                src="Ecommerce.jpg"
+                className="Ecommerce.jpg rounded-lg shadow-md mb-4"
               />
               <h3 className="text-xl font-bold mb-2">E Commerce</h3>
               <p className="text-gray-600 mb-4">
