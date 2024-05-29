@@ -2,29 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    src:url('./assets/Bebas_Neue/BebasNeue-Regular.ttf');
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.pene{
+    background-image: url(../icons/pene.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profilePic2{
+    background-image: url(../icons/Profile2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project1{
+    background-image: url(../icons/Project1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project2{
+    background-image: url(../icons/Project2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project3{
+    background-image: url(../icons/Project3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project4{
+    background-image: url(../icons/Project4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
-  @font-face {
-    src:url('./assets/Roboto_Flex/static/RobotoFlex-Regular.ttf');
-    font-family: "Roboto Flex", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
-  }
+.carousel .slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+

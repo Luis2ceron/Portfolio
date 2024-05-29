@@ -1,48 +1,26 @@
-import { NavLink } from 'react-router-dom';
-import { dataNavbar } from '../data/data';
-import { useNavbarStore } from '../../store/navbarStore';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const { navbarItemActive, selectedItemNavbar } = useNavbarStore();
-
   return (
-    <nav className='hidden bg-app-light-background sm:flex sm:flex-col sm:min-w-[290px]'>
-      <aside className='flex items-center justify-center py-11 border-b-2 border-app-border'>
-        <a href='#'>
-          <img
-            src={dataNavbar(navbarItemActive).logo.icon}
-            alt={dataNavbar(navbarItemActive).logo.title}
-            className='w-32'
-          />
-        </a>
-      </aside>
-
-      <ul className='flex flex-col gap-y-7 py-12 overflow-scroll'>
-        {dataNavbar(navbarItemActive).nav.map((item) => (
-          <NavLink
-            key={item.id}
-            to={item.to}
-            className={`flex flex-row items-center mx-6 p-2 text-2xl rounded-md ${
-              navbarItemActive == item.id
-                ? 'bg-app-shade-6'
-                : 'hover:bg-app-shade-6'
-            }  hover:text-app-primary transition ease-in duration-200`}
-            onClick={() => {
-              selectedItemNavbar(item.id);
-            }}
-          >
-            {item.icon}
-
-            <span
-              className={`ml-3 text-base font-medium text-app-${
-                navbarItemActive == item.id ? 'primary' : 'shade-5'
-              }`}
-            >
-              {item.title}
-            </span>
-          </NavLink>
-        ))}
-      </ul>
+    <nav className="bg-white shadow-md fixed top-0 w-full z-10">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-gray-800">Nombre Apellido</Link>
+        <ul className="flex space-x-4">
+          <li>
+            <Link to="/aboutMe" className="text-lg font-medium text-gray-700 hover:text-gray-900">Sobre Mí</Link>
+          </li>
+          <li>
+            <Link to="/portfolio" className="text-lg font-medium text-gray-700 hover:text-gray-900">Habilidades</Link>
+          </li>
+          <li>
+            <Link to="/skills" className="text-lg font-medium text-gray-700 hover:text-gray-900">Habilidades</Link>
+          </li>
+          <li>
+            <Link to="/contacto" className="text-lg font-medium text-gray-700 hover:text-gray-900">Contacto</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
