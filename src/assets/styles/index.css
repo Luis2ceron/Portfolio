@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.pene{
-    background-image: url(../icons/pene.jpg);
+.Simulador{
+    background-image: url(../Simuldor.jpeg);
     background-size: cover;
     background-position: center;
 }
 
-.profilePic2{
-    background-image: url(../icons/Profile2.jpg);
+.Ecommerce{
+    background-image: url(../Ecommerce.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.project1{
-    background-image: url(../icons/Project1.jpeg);
+.Videojuego{
+    background-image: url(../Videojuego.mp4);
     background-size: cover;
     background-position: center;
 }

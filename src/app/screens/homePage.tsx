@@ -29,7 +29,7 @@ const HomePage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4 text-white">Sobre mi</h2>
-          <p className="text-xl mb-4 text-white">Soy un estudiante de quinto semestre de Ingeniería de Software con la capacidad de adaptarme fácilmente a flujos de trabajo exigentes y adquirir nuevos conocimientos sin afectar los resultados. Me enfoco en brindar soluciones sencillas pero escalables a los retos que se presenten en cualquier etapa del desarrollo de software.
+          <p className="text-xl text-justify flex justify-center align-middle mb-4 text-white">Soy un estudiante de quinto semestre de Ingeniería de Software con la capacidad de adaptarme fácilmente a flujos de trabajo exigentes y adquirir nuevos conocimientos sin afectar los resultados. Me enfoco en brindar soluciones sencillas pero escalables a los retos que se presenten en cualquier etapa del desarrollo de software.
 Mi experiencia incluye trabajar como programador y tester en proyectos independientes, especialmente en el desarrollo y pruebas de videojuegos y simuladores. He participado en varios concursos amateur de creación de videojuegos (game jams) obteniendo resultados destacados.</p>
           <p className="text-xl mb-4 text-white"> Fuera del entorno del desarrollo de software, disfruto de todo el proceso relacionado con los videojuegos, Desde aprender sobre la historia de éstos en su desarrollo y temática hasta buscar formas de recrearlos total o parcialmente. Considero a su vez que esta pasión por aprender acerca de lo que disfruto está presente también en otros temas como la música y habilidades manuales Como reparar cosas y la carpintería</p>
           <div className="flex justify-center md:justify-start">
@@ -59,7 +59,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="Videojuego.mp4 rounded-lg shadow-md mb-4"
+                className="Videojuego rounded-lg shadow-md mb-4"
               />
               {/*Aqui en los h3 está los nombres de los proyectos, su descripcion y en el href el link para que te redireccione al directorio*/}
 
@@ -76,7 +76,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="Simulador.jpeg rounded-lg shadow-md mb-4"
+                className="Simulador rounded-lg shadow-md mb-4"
               />
               <h3 className="text-xl font-bold mb-2">Simulador</h3>
               <p className="text-gray-600 mb-4">
@@ -93,7 +93,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
                <img
                 width={350}
                 height={250}
-                className="Ecommerce.jpg rounded-lg shadow-md mb-4"
+                className="Ecommerce rounded-lg shadow-md mb-4"
               />
               <h3 className="text-xl font-bold mb-2">E Commerce</h3>
               <p className="text-gray-600 mb-4">
