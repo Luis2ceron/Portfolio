@@ -37,9 +37,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
         </div>
         <div className="flex flex-col items-center">
           {/*Esta imagen y el de div con los p los puedes borrar si quieres*/}
-          <img
-            className="w-48 h-48 rounded-xl mb-4"
-          />
+          
           <div className="flex flex-col items-center">
             <p className="text-xl font-bold text-white">Luis Alejandro Ceron Muñoz</p>
             <p className="text-base text-white">Estudiante de Ingeniería de Software</p>
@@ -62,13 +60,13 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="project1 rounded-lg shadow-md mb-4"
+                className="rounded-lg shadow-md mb-4"
                 src="Videojuego.mp4"
               />
               {/*Aqui en los h3 está los nombres de los proyectos, su descripcion y en el href el link para que te redireccione al directorio*/}
 
               <h3 className=" flex flex-col items-centertext-xl font-bold mb-2">Videojuego Independiente</h3>
-              <p className=" flex flex-col items-center text-gray-600 mb-4">'TrBjo independiente en dearrollo de videojuegos en godot</p>
+              <p className=" flex flex-col items-center text-gray-600 mb-4">'Trabajo independiente en dearrollo de videojuegos en godot</p>
               <a className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md  transition-colors" style={{background: '#1f1f1f'}}>
               </a>
             </div>
@@ -80,7 +78,7 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               <img
                 width={350}
                 height={250}
-                className="project2 rounded-lg shadow-md mb-4"
+                className="rounded-lg shadow-md mb-4"
                 src="Simulador.jpeg"
               />
               <h3 className="text-xl font-bold mb-2">Simulador</h3>
