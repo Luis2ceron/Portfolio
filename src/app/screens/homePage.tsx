@@ -1,39 +1,31 @@
-import { useTranslation } from 'react-i18next';
-import { t } from "i18next";
 import React from 'react';
+import { useTranslation, t } from 'react-i18next'; 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-
-
 const HomePage = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation(); 
 
   const onChangeLang = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
   };
+
   return (
-    
-    <div className="container mx-auto px-4 py-8" style={{background: '#1f1f1f'}} >
-      {/*Aqui empieza la pagina principal*/}
+    <div className="container mx-auto px-4 py-8" style={{ background: '#1f1f1f' }}>
       <h1 className="text-3xl font-bold text-center mb-4 text-white">{t('welcomePort')}</h1>
-      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Estudiante de Ing.Software</p>
-      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white ">Indie GameDev</p>
+      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white">Estudiante de Ing.Software</p>
+      <p className="text-lg text-justify flex justify-center align-middle mb-4 text-white">Indie GameDev</p>
       <section className="text-center">
         <h2 className="text-xl font-bold align-middle mb-4 text-white">{t('contactMe')}:</h2>
-        {/*Aqui agregas la pendejada de los iconos */}
         <p>
-          <a href="luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">{t('email')}</a>
-          <a href="www.linkedin.com/in/luis-cerón-694626272" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">LinkedIn</a>
+          <a href="mailto:luiscerontrabajos@gmail.com" className="text-blue-500 hover:text-blue-700 align-middle">{t('email')}</a>
+          <a href="https://www.linkedin.com/in/luis-cerón-694626272" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">LinkedIn</a>
           <a href="https://wa.me/qr/P72NSGVSR6TWL1" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">WhatsApp</a>
           <a href="https://github.com/Luis2ceron" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitHub</a>
           <a href="https://gitlab.com/luiscerontrabajos" className="text-blue-500 hover:text-blue-700 ml-4 align-middle">GitLab</a>
-
-
         </p>
       </section>
-      {/*Aqui empieza el About me*/}
       <section id="sobre-mi" className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center md:text-left">
@@ -63,14 +55,13 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
           </div>
         </div>
       </div>
-    </section>
-    {/*Aqui empieza el portafolio*/}
-    <section id="portafolio" className="container mx-auto px-4 py-8 text-white">
-      <h2 className="flex flex-col items-center text-3xl font-bold mb-8">{t('portfolio')}</h2>
-      <div className="flex flex-col items-center gap-4">
-        <div className="flex flex-col items-center">
-          <Carousel className="carousel items-center mx-auto max-w-md">
-            <div style={{
+      </section>
+      <section id="portafolio" className="container mx-auto px-4 py-8 text-white">
+        {/* Contenido del portafolio... */}
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center">
+            <Carousel className="carousel items-center mx-auto max-w-md">
+               <div style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -127,14 +118,13 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
               </a>
             </div>
             </div>
-          </Carousel>
+            </Carousel>
+          </div>
         </div>
-      </div>
-      {/*Aqui empieza lo de habilidades aqui tambien le agregas tus iconos de mrd */}
-      <section className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold text-center mb-4">Habilidades</h2>
+      </section>
       
-      <div className="grid grid-cols-2 gap-4">
+      <section className="container mx-auto px-4 py-8">
+          <div className="grid grid-cols-2 gap-4">
         <div className="border rounded-lg px-4 py-4">
           <h3 className="font-bold text-lg mb-2">Lenguajes</h3>
           <ul className="list-disc ml-4">
@@ -174,10 +164,9 @@ Mi experiencia incluye trabajar como programador y tester en proyectos independi
         </div>
       </div>
     </section>
-    </section>
+      </section>
     </div>
   );
 };
 
-export default HomePage; 
-
+export default HomePage;
